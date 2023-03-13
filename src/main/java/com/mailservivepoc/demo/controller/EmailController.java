@@ -1,15 +1,11 @@
 package com.mailservivepoc.demo.controller;
 
-import com.mailservivepoc.demo.model.EmailReplyRequest;
-import com.mailservivepoc.demo.model.EmailReplyResponse;
-import com.mailservivepoc.demo.model.EmailRequest;
-import com.mailservivepoc.demo.model.EmailResponse;
+import com.mailservivepoc.demo.model.*;
 import com.mailservivepoc.demo.service.EmailService;
+import com.mailservivepoc.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,6 +13,7 @@ import java.util.List;
 @RestController
 public class EmailController {
     private final EmailService emailService;
+
 
     public EmailController(EmailService emailService) {
         this.emailService = emailService;
@@ -51,6 +48,9 @@ public class EmailController {
         }
 
     }
+
+
+
 
 
 
