@@ -28,8 +28,8 @@ public class EmailService {
 
     private static final String IMAP_HOST = "imap.gmail.com";
     private static final String IMAP_PORT = "993";
-    private static final String USERNAME = "vjexe007@gmail.com";
-    private static final String PASSWORD = "eizzkjboabtssbxz";
+    private static final String USERNAME = "ENTER_YOUR_EMAIL";
+    private static final String PASSWORD = "ENTER_YOUR PASSWORD";
     private static final String SMTP_HOST = "smtp.gmail.com";
     private static final String SMTP_PORT = "587";
 
